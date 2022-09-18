@@ -69,15 +69,6 @@ void PrintArray(int [,] matr)
     }
 }
 
-// void PrintArray2(int [] matr)
-// {
-//         for (int i = 0; i < matr.Length; i++)
-//         {
-//             Console.Write(matr[i] + "   ");
-//         }
-//         Console.WriteLine();
-// }
-
 int MinRow(int [] sum)
 {
 int min = sum[0];
@@ -98,9 +89,6 @@ PrintArray(array);
 int [] sum = new int [3];
 
 FillArr(sum,array);
-
-// PrintArray2(sum);
-
 
 if (sum[0] == MinRow(sum)) Console.Write($"Минимальное значение суммы элементов в строке 1 ");
 if (sum[1] == MinRow(sum)) Console.Write($"Минимальное значение суммы элементов в строке 2");
